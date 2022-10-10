@@ -1,0 +1,562 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  line-height: 1;
+}
+
+.background-picture {
+  height: 500px;
+  width: 100%;
+  align-content: right;
+
+
+}
+
+.image-wrap {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.image-wrap img {
+  width: 100%;
+  -ms-animation: move 40s ease;
+  -webkit-animation: move 40s ease;
+  animation: move 40s ease;
+
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform-origin: bottom left;
+    -moz-transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    -o-transform-origin: bottom left;
+    transform-origin: bottom left;
+
+    -ms-transform: scale(1.0);
+    /* IE 9 */
+
+    -webkit-transform: scale(1.0);
+    /* Safari and Chrome */
+
+    -o-transform: scale(1.0);
+    /* Opera */
+
+    -moz-transform: scale(1.0);
+    transform: scale(1.0);
+    /* Firefox */
+  }
+
+  100% {
+
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+
+    -webkit-transform: scale(1.2);
+    /* Safari and Chrome */
+
+    -o-transform: scale(1.2);
+    /* Opera */
+
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+    /* Firefox */
+  }
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.line {
+  width: 100%;
+  height: 7rem;
+  overflow: hidden;
+  border: 1px solid rgb(246, 243, 243);
+  color: #192a56;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.lineUp {
+  animation: 2s anim-lineUp ease-out infinite;
+
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.bio {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin: 240px auto;
+  margin-bottom: 0%;
+  margin-top: 0%;
+}
+
+.box {
+  position: relative;
+  width: 200PX;
+  height: 300PX;
+  float: left;
+  margin: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #192a56;
+  margin-bottom: 0%;
+}
+
+.icon {
+
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+
+  z-index: 1;
+}
+
+.box:hover.icon {
+  top: 10px;
+  left: calc(50% -40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.fa-regular {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: 0.5s;
+  color: rgb(241, 240, 243);
+
+}
+
+.box:hover .icon .fa-regular {
+  font-size: 40px;
+}
+
+.fa-solid {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: 0.5s;
+  color: rgb(241, 240, 243);
+
+}
+
+.box:hover .icon .fa-solid {
+  font-size: 40px;
+}
+
+.content {
+  position: absolute;
+  top: 10%;
+  height: calc(100% -100%);
+  text-align: center;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.box:hover .content {
+  top: 60px;
+  opacity: 1;
+}
+
+.content h3 {
+  margin: 5 0 10px;
+  padding: 4%;
+  color: white;
+  font-size: 24px;
+
+}
+
+.content p {
+  margin-top: 3px;
+  padding: 0px;
+  color: #f5f6fa;
+}
+
+.u-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.skill-container {
+  width: 75%;
+  background-color: #95afc0;
+}
+
+.skills {
+  text-align: right;
+
+
+
+
+}
+
+.title {
+  color: #192a56;
+  margin-top: 2%;
+
+}
+
+h3 {
+
+  font-size: 20px;
+  color: rgb(20, 20, 20);
+}
+
+h5 {
+  color: #192a56;
+}
+
+h1 {
+  color: #192a56;
+}
+
+.html {
+  width: 90%;
+  background-color: #04AA6D;
+}
+
+.css {
+  width: 80%;
+  background-color: #2196F3;
+}
+
+.photoshop {
+  width: 70%;
+  background-color: #808080;
+}
+
+.wordpress {
+  width: 60%;
+  background-color: #f44336;
+}
+
+
+
+.split {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding: top 0;
+}
+
+
+.right {
+  left: 0;
+  margin-top: 0%;
+  width: 20%;
+  background-color: rgb(253, 251, 251);
+
+}
+
+/* Control the right side */
+.left {
+  right: 0;
+  width: 80%;
+  margin-left: 2px;
+
+}
+
+.right-div {
+  height: 900px;
+  width: 250px;
+  overflow-x: scroll;
+  margin-top: 0%;
+
+}
+
+.profile-div {
+
+
+  width: 250px;
+  height: 250px;
+
+}
+
+.picture2 {
+  width: 150px;
+  height: 150px;
+  margin-left: 50px;
+  margin-top: 5px;
+  margin-right: 5px;
+  border-radius: 50%;
+  transition: transform .2s;
+}
+
+.picture2:hover {
+  transform: scale(1.5);
+}
+
+.name {
+  margin-left: 10px;
+  color: rgb(11, 11, 11);
+}
+
+h2 {
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 5px;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+
+}
+
+ul li {
+  margin-top: 30px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.btn {
+  margin-left: 30px;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  margin-top: 10px;
+  color: aliceblue;
+  background-color: #192a56;
+}
+
+.btn:hover {
+  background-color: #196aac;
+  color: white;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+table,
+th,
+td {
+  border: 3px solid black;
+  border-collapse: collapse;
+  padding-top: 2px;
+  padding-left: 2px;
+  width: 60%;
+}
+
+td {
+  font-family: 'Times New Roman', Times, serif;
+  width: 10%;
+}
+
+.title2 {
+  font-size: 90%;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: #192a56;
+}
+
+.cv {
+  padding-top: 2%;
+  align-items: center;
+  padding-left: 20%;
+  color: white;
+  margin-bottom: 10px;
+
+}
+
+.btn1 {
+
+  font-size: 30px;
+  margin-top: 1px;
+  color: aliceblue;
+  background-color: #192a56;
+}
+
+.btn1:hover {
+  background-color: #196aac;
+  color: white;
+}
+
+.form-submit-button {
+  background: #B9DFFF;
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #eee;
+  text-shadow: none;
+  height: 50px;
+  width: 100px;
+}
+
+.form-submit-button:hover {
+  background: #042641;
+  color: rgb(255, 255, 255);
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgb(15, 21, 87);
+  text-shadow: none;
+}
+
+form {
+  padding: 25px;
+  margin: 25px;
+  box-shadow: 0 2px 5px #f5f5f5;
+  background: #f5f5f5;
+
+  margin-top: 3px;
+}
+
+footer {
+  background-color: #192a56;
+  height: 5px;
+height: 100%;
+margin-top: 100%;
+}
+
+.banner-area{
+  margin: 0;
+  padding: 0;
+  background: url("https://i.pinimg.com/originals/a4/b2/a6/a4b2a67a84819dcbc554c9782c74311f.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  
+
+}
+
+.banner-area h3{
+  position: absolute;
+  top: 300%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width: 100%;
+  text-align: center;
+  margin: 0%;
+  padding: 0%;
+  font-family:'Courier New', Courier, monospace;
+  color: #fff;
+  font-size: 4.5em;
+
+}
+
+.a1:hover {
+  color: rgb(248, 251, 248);
+  background-color: transparent;
+  text-decoration: none;
+  
+}
+.a1:link, .a1:visited {
+  
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.a1:hover, .a1:active {
+  background-color: rgb(218, 210, 228);
+}
+
+
+.row_gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column_gallery {
+  flex: 50%;
+
+  align-items: center;
+}
+
+.column_gallery img {
+  margin-top: 10px;
+  vertical-align: middle;
+  margin-left: 50px;
+}
+
+.gallery_text {
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  ;
+}
+
+.body_gallery {
+  background: url(https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img1{
+  width: 300px;
+  height: 300px;
+}
+
